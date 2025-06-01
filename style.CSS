@@ -1,0 +1,80 @@
+header{
+    background-color: whitesmoke;
+    background: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+color: blue;
+    font-size: 20px;
+    text-align: center;
+  
+}
+
+p{
+    color: black;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium';
+    text-align: justify;
+}
+.main p:first-of-type::first-letter{
+    font-weight: bold;
+    font-size: 1.4em;
+}
+.main h2:first-of-type::first-letter{
+    font-weight: bold;
+    font-size: 1.3em;
+    color: darkred;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: black;
+}
+h1{
+    font-size: 50px;
+    font-style: oblique;
+    color: slategray;
+    font-weight: 500;
+    text-decoration: underline;
+    text-align: center;
+}
+
+h2{
+    font-size: 60px;
+    font-style: unset;
+    color: rgb(153, 51, 51);
+    text-align: left;
+}
+
+footer{
+    background-color: darkblue;
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-radius: 10%;
+
+}
+h3{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 20px;
+    font-family: italic;
+}
+a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:hover{
+    color: blue;
+    text-decoration: underline;
+}

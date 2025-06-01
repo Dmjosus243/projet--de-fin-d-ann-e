@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width,initial-scale=1">
+        <title>Langage C</title>
+        <<link rel="stylesheet" href="style.CSS">
+    </head>
+    <header>LANGAGE C</header>
+    <body>
+        <p>Bienvenue sur notre page de programation C ,comme son nom l'indique nous apprendrons le langage de programation C . </p>
+        <p>Tout d'abord commençons avec son introduction </p>
+        <p>Le langage C est un langage de programmation généraliste, impératif et procédural. Il a été développé dans les années 1970 par Dennis Ritchie au sein des laboratoires Bell. Le langage C est souvent considéré comme un langage de bas niveau, car il permet un accès direct à la mémoire et aux ressources matérielles, tout en offrant des abstractions de haut niveau pour faciliter la programmation.</p>
+        <p>Le langage C est largement utilisé dans le développement de systèmes d'exploitation, de logiciels embarqués, de compilateurs et d'applications nécessitant des performances élevées. Il est également la base de nombreux autres langages de programmation, tels que C++, C#, Java et Objective-C.</p>
+        <p>Il est aussi connu pour sa portabilité, sa flexibilité et sa puissance. Il permet aux programmeurs de manipuler directement la mémoire, d'utiliser des pointeurs et de gérer la mémoire dynamique, ce qui en fait un choix populaire pour les développeurs de systèmes et d'applications nécessitant un contrôle précis des ressources;Le langage C est également connu pour sa syntaxe claire et concise, ce qui le rend relativement facile à apprendre pour les débutants. Il dispose d'une vaste bibliothèque standard qui fournit de nombreuses fonctions utiles pour la manipulation de chaînes de caractères, les opérations mathématiques, la gestion des fichiers et bien plus encore.</p>
+        <p>En raison de sa popularité et de sa longévité, le langage C est largement documenté et dispose d'une communauté active de développeurs. De nombreux livres, tutoriels et ressources en ligne sont disponibles pour aider les programmeurs à apprendre et à maîtriser le langage C.</p>
+        <p>En résumé, le langage C est un langage de programmation puissant et polyvalent qui est largement utilisé dans le développement de logiciels et de systèmes. Sa combinaison de bas niveau et de haut niveau en fait un choix populaire pour les développeurs cherchant à créer des applications performantes et efficaces.</p>
+        <p>Voici ci-dessous la documentation concernant ce langage de programmation  </p>
+        <h2>Bases de la programmation C</h2>
+        <ul>
+            <li>
+            <h3>1. Variables et Types de Données</h3>
+            <p>Les variables sont utilisées pour stocker des données. Le langage C prend en charge plusieurs types de données comme <code>int</code>, <code>float</code>, <code>char</code>, etc.</p>
+            <pre>
+    <code>
+    #include &lt;stdio.h&gt;
+
+    int main() {
+        int age = 25; // Variable entière
+        float taille = 1.75; // Variable flottante
+        char initiale = 'A'; // Variable caractère
+
+        printf("Age: %d\n", age);
+        printf("Taille: %.2f\n", taille);
+        printf("Initiale: %c\n", initiale);
+
+        return 0;
+    }
+    </code>
+            </pre>
+            </li>
+            <li>
+            <h3>2. Structures de Contrôle</h3>
+            <p>Les structures de contrôle comme <code>if</code>, <code>else</code>, <code>for</code>, <code>while</code> permettent de contrôler le flux d'exécution du programme.</p>
+            <pre>
+    <code>
+    #include &lt;stdio.h&gt;
+
+    int main() {
+        int nombre = 10;
+
+        if (nombre > 5) {
+        printf("Le nombre est supérieur à 5\n");
+        } else {
+        printf("Le nombre est inférieur ou égal à 5\n");
+        }
+
+        for (int i = 0; i < 5; i++) {
+        printf("Itération: %d\n", i);
+        }
+
+        return 0;
+    }
+    </code>
+            </pre>
+            </li>
+            <li>
+            <h3>3. Fonctions</h3>
+            <p>Les fonctions permettent de structurer le code en blocs réutilisables.</p>
+            <pre>
+    <code>
+    #include &lt;stdio.h&gt;
+
+    void saluer() {
+        printf("Bonjour, bienvenue dans le langage C!\n");
+    }
+
+    int addition(int a, int b) {
+        return a + b;
+    }
+
+    int main() {
+        saluer();
+        int resultat = addition(5, 3);
+        printf("Résultat de l'addition: %d\n", resultat);
+
+        return 0;
+    }
+    </code>
+            </pre>
+            </li>
+            <li>
+            <h3>4. Tableaux</h3>
+            <p>Les tableaux permettent de stocker plusieurs valeurs du même type.</p>
+            <pre>
+    <code>
+    #include &lt;stdio.h&gt;
+
+    int main() {
+        int notes[5] = {10, 15, 20, 18, 12};
+
+        for (int i = 0; i < 5; i++) {
+        printf("Note %d: %d\n", i + 1, notes[i]);
+        }
+
+        return 0;
+    }
+    </code>
+            </pre>
+            </li>
+            <li>
+            <h3>5. Pointeurs</h3>
+            <p>Les pointeurs sont des variables qui stockent l'adresse mémoire d'une autre variable.</p>
+            <pre>
+    <code>
+    #include &lt;stdio.h&gt;
+
+    int main() {
+        int nombre = 42;
+        int *pointeur = &nombre;
+
+        printf("Valeur: %d\n", nombre);
+        printf("Adresse: %p\n", pointeur);
+        printf("Valeur via pointeur: %d\n", *pointeur);
+
+        return 0;
+    }
+    </code>
+            </pre>
+            </li>
+        </ul>
+        <h2>Notion des Fonctions en Langage C</h2>
+        <p>Les fonctions en langage C permettent de diviser un programme en plusieurs blocs logiques. Elles facilitent la réutilisation du code, la lisibilité et la maintenance. Une fonction est un ensemble d'instructions regroupées pour effectuer une tâche spécifique.</p>
+        <h3>Déclaration et Définition d'une Fonction</h3>
+        <p>Une fonction doit être déclarée avant d'être utilisée. La déclaration indique le type de retour, le nom de la fonction et les paramètres qu'elle accepte. La définition contient le corps de la fonction, c'est-à-dire les instructions qu'elle exécute.</p>
+        <pre>
+        <code>
+        #include &lt;stdio.h&gt;
+
+        // Déclaration de la fonction
+        int addition(int a, int b);
+
+        int main() {
+        int resultat = addition(10, 5); // Appel de la fonction
+        printf("Résultat de l'addition: %d\n", resultat);
+
+        return 0;
+        }
+
+        // Définition de la fonction
+        int addition(int a, int b) {
+        return a + b;
+        }
+        </code>
+        </pre>
+        <h3>Fonctions avec Retour et Sans Retour</h3>
+        <p>Les fonctions peuvent retourner une valeur ou ne rien retourner (dans ce cas, elles utilisent le type <code>void</code>).</p>
+        <pre>
+        <code>
+        #include &lt;stdio.h&gt;
+
+        // Fonction avec retour
+        int carre(int nombre) {
+        return nombre * nombre;
+        }
+
+        // Fonction sans retour
+        void afficherMessage() {
+        printf("Ceci est un message sans retour.\n");
+        }
+
+        int main() {
+        int resultat = carre(4);
+        printf("Carré de 4: %d\n", resultat);
+
+        afficherMessage();
+
+        return 0;
+        }
+        </code>
+        </pre>
+        <h3>Passage de Paramètres</h3>
+        <p>Les paramètres peuvent être passés par valeur (une copie de la valeur est transmise) ou par référence (l'adresse mémoire est transmise).</p>
+        <pre>
+        <code>
+        #include &lt;stdio.h&gt;
+
+        // Passage par valeur
+        void incrementerParValeur(int nombre) {
+        nombre++;
+        printf("Valeur dans la fonction (par valeur): %d\n", nombre);
+        }
+
+        // Passage par référence
+        void incrementerParReference(int *nombre) {
+        (*nombre)++;
+        printf("Valeur dans la fonction (par référence): %d\n", *nombre);
+        }
+
+        int main() {
+        int valeur = 10;
+
+        incrementerParValeur(valeur);
+        printf("Valeur après appel (par valeur): %d\n", valeur);
+
+        incrementerParReference(&valeur);
+        printf("Valeur après appel (par référence): %d\n", valeur);
+
+        return 0;
+        }
+        </code>
+        </pre>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <p> Voici ci-dessous quelque videos explicatives  sur le langage C </p>
+        <table>
+            <li>
+                <iframe width="640" height="360" src="https : // www.youtube.com/embed/" framedorder="0" allowfullscreen></iframe>
+            </li>
+        </table>
+    </body>
