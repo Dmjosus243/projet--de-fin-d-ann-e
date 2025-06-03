@@ -78,3 +78,11 @@ a:hover{
     color: blue;
     text-decoration: underline;
 }
+h1:head-main{
+    border-radius: 15px;
+    background: sticky;
+    background-color: antiquewhite;
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
