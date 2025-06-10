@@ -71,7 +71,7 @@ Le contenude chaque élément cette balise doit indiquer la destination du lien.
     <li><code>&lt;i&gt;</code>:L'élément HTML <code>&lt;i&gt;</code> représente un morceau de texte qui se différencie du texte principal.Cela peut par exemple être le cas pour des termes techniques,des phrases dans une langue étrangère ou encore l'expression des pensées d'un personnage.Le contenu de cet élélment est généralement affiché en italique .</li>
     <li><code>&lt;iframe&gt;</code>:L'élélment HTML <code>&lt;iframe&gt;</code> permet d'intégrer un document HTML dans un autre document HTML. Il est souvent utilisé pour afficher des contenus externes tels que des vidéos, des cartes ou des formulaires.</li>
     <li><code>&lt;img&gt;</code>:L'élélment HTML <code>&lt;img&gt;</code> est utilisé pour intégrer des images dans un document HTML. Il nécessite l'attribut <code>src</code> pour spécifier l'URL de l'image et peut également inclure des attributs tels que <code>alt</code> pour fournir une description alternative de l'image.</li>
-    <li><code>&lt;input&gt;</code>:L'élélment HTML <code>&lt;input&gt;</code> est utilsépour créer un controle interactif dans un formulaire web qui permet aux utilisateurs de saisir des données .Les saisies possibles et le comportement de l'élélment <code>&lt;input&gt;</code>dépendent fortement de la valeur indiquée dans son attribut <code>type=&quot; &quot;</code> et ses autres attributs .Il existe différents contrôles pour la saisie,qui dépendent de l'appareil utilisé et de l'agent utilisateur. 
+    <li><code>&lt;input&gt;</code>:L'élélment HTML <code>&lt;input&gt;</code> est utilsé pour créer un controle interactif dans un formulaire web qui permet aux utilisateurs de saisir des données .Les saisies possibles et le comportement de l'élélment <code>&lt;input&gt;</code>dépendent fortement de la valeur indiquée dans son attribut <code>type=&quot; &quot;</code> et ses autres attributs .Il existe différents contrôles pour la saisie,qui dépendent de l'appareil utilisé et de l'agent utilisateur. 
     <h4>Les différents types de champs <code>&lt;input&gt;</code></h4>
     <p>La façon dont un élélment <code>&lt;input&gt;</code>fonctionne dépend grandement de la valeur de son attribut "type".Aussi ,pour chacun de ces types, on aura une page de référence dédiée.Par défaut,lorsque l'attribut  "type" n'est pas présent , il aura la valeur implicite "text".</p>
     <table>
@@ -115,10 +115,61 @@ Le contenude chaque élément cette balise doit indiquer la destination du lien.
             <td><code>datetime-local</code></td>
             <td>Un contrôle qui permet de saisir une date et une heure(sans fuseau horaire),cela ouvre un sélecteur de date ou des roues numériques pour la sélection  de la date et de l'heure dans les navigateurs qui le prennent en charge .</td>
         </tr>
-        
+        <tr>
+            <td><code>file</code></td>
+            <td>Un attribut qui permet de sélectionner un fichier.</td>
+        </tr>
+        <tr>
+            <td><code>hidden</code></td>
+            <td>Un attribut qui n'affiche pas mais sa valeur est envoyée au serveur .Il  y a un exemple dans la colonne à côté,mais il est caché . </td>
+        </tr>
+        <tr>
+            <td><code>image</code></td>
+            <td>Un bouton graphique d'envoi du formulaire.L'attribut "src" doit être défini avec la source de l'image et l'attribut  "alt" doit  être défini avec le texte alternatif si l'image est absente . </td>
+        </tr>
+        <tr>
+            td><code>month</code></td>
+            <td>Un contrôle qui permet de saisir un mois et une année,mais sans jour ni heure.</td>
+        </tr>
+        <tr>
+            <td><code>number</code></td>
+            <td>Un attribut qui permet de saisir un nombre ,affichant des curseurs pour augmenter ou réduire la valeur et disposant d'une validation par défaut lorsqu"elle est prise en charge .Un clavier numérique est affiché pour certains appareils avec des claviers dynamiques .</td>
+        </tr>
         <tr>
             <td><code>radio</code></td>
             <td>Bouton radio pour sélectionner une option parmi plusieurs.</td>
+        </tr>
+        <tr>
+            <td><code>range</code></td>
+            <td>Un attribut qui permet de saisir un nombre dont la valeur exacte n'est pas importante .Le contrôle qui s'affiche est une jauge horizontale avec la valeur par défaut placée au milieu; on l'utilise avec les attributs "min" et "max" pour définir un intervalle des valeurs acceptables.</td>
+        </tr>
+        <tr>
+            <td><code>reset</code></td>
+            <td>Bouton pour réinitialiser le formulaire.</td>
+        </tr>
+        <tr>
+            <td><code>search</code></td>
+            <td>Un champ texte sur une ligne pour de termes de recherche.Les sauts de ligne sont automatique retirés .Le contrôle peut diposer d'une icône permettant de réinitialiser le champ .</td>
+        </tr> 
+        <tr>
+            <td><code>submit</code></td>
+            <td>Un attribut qui permet d'envoyer le formulaire .</td>
+        </tr>       
+        <tr>
+            <td><code>tel</code></td>
+            <td>Un attribut pour saisir un numéro de téléphone , qui affiche un clavier téléphonique pour certains appareils avec des claviers dynamiques.</td>
+        </tr>
+        <tr>
+            <td><code>time</code></td>
+            <td>Un contrôle qui permet de saisir une heure,qui est composé d'une heure et d'une minute mais sans date.</td>
+        </tr>
+        <tr>
+            <td><code>url</code></td>
+            <td>Un champ pour saisir une URL.Cet attribut ressemble à un champ de type "text", mais dispose de paramètres de validation et d'un clavier adapté pour les navigateurs et appareils qui les prennent en charge et qui ont un clavier dynamique.  </td>
+        </tr>
+        <tr>
+            <td><code>week</code></td>
+            <td>Un attribut permettant de saisir une date représentée par un numéro de semaine et une année (sans indication de fuseau horaire ). </td>
         </tr>
     </table>
 
