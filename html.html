@@ -183,6 +183,68 @@ Le contenude chaque élément cette balise doit indiquer la destination du lien.
     <li><code>&lt;math&gt;</code> :L'élément racine de MathML est <code>&lt;math&gt;</code>.Tout objet représenté en MathML doit être encadré de balises <code>&lt;math&gt;</code>.De plus , il est interdit d'imbriquer un autre élément <code>&lt;math&gt;</code> à l'intérieur d'un premier .Il est toutefois possible d'avoir un nombre arbitraire d'éléments fils à l'intérieur d'un élément <code>&lt;math&gt;</code>.</li>
     <li><code>&lt;menu&gt;</code>:L'élément HTML <code>&lt;menu&gt;</code> est une alternative sémantique à <code>&lt;ul&gt;</code> traité par les navigateurs, et en termes d'accessibilité comme un élément <code>&lt;ul&gt;</code>. Il représente une liste d'éléments non-ordonnée (chaque élément de la liste étant représenté par un élément code
         li).</li>
+    <li><code>&lt;meter&gt;</code>:L'élément HTML <code>&lt;meter&gt;</code> eprésente une valeur scalaire dans un intervalle donné ou une valeur fractionnaire. <p>Cet élément HTML contient ses propres attributs qui sont les suivants :</p>
+    <table>
+        <tr>
+            <th>Attribut</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><code>form</code></td>
+            <td>Cet attribut contient l'attribut 'id' de l'élément <code>&lt;form&gt;</code> auquel celui-ci est rattaché. Par défaut, il est à l'élément <code>&lt;form&gt;</code> qui est son plus proche ancêtre.</td>
+        </tr>
+        <tr>
+            <td><code>min</code></td>
+            <td>Valeur minimale de la mesure.</td>
+        </tr>
+        <tr>
+            <td><code>max</code></td>
+            <td>Valeur maximale de la mesure.</td>
+        </tr>
+        <tr>
+            <td><code>value</code></td>
+            <td>Valeur actuelle de la mesure.</td>
+        </tr>
+        <tr>
+            <td><code>low</code></td>
+            <td>Valeur basse de l'intervalle.</td>
+        </tr>
+        <tr>
+            <td><code>high</code></td>
+            <td>Valeur haute de l'intervalle.</td>
+        </tr>
+        <tr>
+            <td><code>optimum</code></td>
+            <td>Cet attribut représente la valeur idéale pour la mesure. Si cet attribut est défini, il doit s'agir d'un nombre à virgule compris entre les valeurs des attributs 'min' et 'max'. Si la valeur de optimum est inférieure à 'low', s'il est défini, cela signifie que les valeurs les plus petites sont meilleures; si sa valeur est supérieure à 'high', s'il est défini, cela signifie que les valeurs les plus grandes sont meilleures; enfin, s'il est compris entre 'low' et 'high', cela signifie que les extrêmes ne sont pas les meilleures grandeurs.</td>
+        </tr>
+    </table>
+    </li>  
+    <li><code>&lt;nav&gt;</code>:L'élément HTML <code>&lt;nav&gt;</code> représente une section d'une page ayant des liens vers d'autres pages ou des fragments de cette page. Autrement dit, c'est une section destinée à la navigation dans un document (avec des menus, des tables des matières, des index, etc.). Il est à savoir que cet élément ne contient que les attributs universels.</li>  
+    <li><code>&lt;noscript&gt;</code>:L'élément HTML <code>&lt;noscript&gt;</code>  définit un fragment HTML qui doit être affiché si les fonctionnalités de script ne sont pas prises en charge ou si elles sont désactivées.Sur cet élément on ne peut que utiliser les attributs universels </li>
+    <li><code>&lt;object&gt;</code>:L'élément HTML <code>&lt;object&gt;</code>  représente une ressource externe qui peut être interprétée comme une image, un contexte de navigation imbriqué ou une ressource à traiter comme un plugin.Comme tout autre éléments HTML, cet élément inclut les attributs , mais voici quelques uns qui se retrouve le plsu souvent dans cet élément :
+    <table>
+        <tr>
+            <th>Attribut</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>data</td>
+            <td>Spécifie l'URL de la ressource externe à intégrer.L'adresse de la ressource, une URL valide. Au moins un attribut data et un attribut type doivent être définis; pour son bon fonctionnement </td>
+        </tr>
+        <tr>
+            <td>form</td>
+            <td>L'élément de formulaire éventuel auquel l'élément est associé. La valeur de cet attribut doit être l'identifiant d'un élément 'form' du même document.</td>
+        </tr>
+        <tr>
+            <td>height</td>
+            <td>La hauteur de la ressource à afficher, exprimée en pixels CSS</td>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td>Le nom du contexte de navigation valide (HTML5) ou du contrôle associé à l'élément (HTML 4).</td>
+        </tr>
+    </table>
+    </li>
 </p>
 
 
