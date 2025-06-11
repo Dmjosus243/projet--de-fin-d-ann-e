@@ -243,9 +243,70 @@ Le contenude chaque élément cette balise doit indiquer la destination du lien.
             <td>name</td>
             <td>Le nom du contexte de navigation valide (HTML5) ou du contrôle associé à l'élément (HTML 4).</td>
         </tr>
+        <tr>
+            <td>type</td>
+            <td>Le type MIME de la ressource définie par data. Au moins un attribut data et un attribut type doivent être définis.</td>
+        </tr>
+        <tr>usemap</tr>
+            <td>Spécifie l'URL d'une carte d'image à utiliser pour l'élément. La valeur de cet attribut doit commencer par un caractère dièse (#) suivi de l'identifiant d'un élément 'map' du même document.</td>
+        </tr>
+        <tr>
+            <td>width</td>
+            <td>La largeur de la ressource à afficher, exprimée en pixels CSS.</td>
     </table>
     </li>
+    <li><code>&lt;ol&gt;</code>:L'élément HTML <code>&lt;ol&gt;</code> représente une liste ordonnée, c'est-à-dire une liste dont les éléments sont numérotés ou classés dans un ordre spécifique. Chaque élément de la liste est représenté par un élément <code>&lt;li&gt;</code>.À l'instar des autres éléments HTML, il est possible d'utiliser les attributs universels sur cet élément.
+    <table>
+        <tr>
+        <th>Attribut</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>reversed</td>
+        <td>Cet attribut booléen indique que les éléments de la liste sont dans l'ordre inverse. Les éléments sont numérotés de haut en bas.</td>
+    </tr>
+    <tr>
+        <td>start</td>
+        <td>Un nombre entier à partir duquel on commence à compter pour les éléments de la liste. Toujours un chiffre arabique (1, 2, 3, etc.), même lorsque le type de numérotation est constitué de lettres ou de chiffres romains. Par exemple, pour commencer à numéroter les éléments à partir de la lettre "d" ou du chiffre romain "iv", utilisez start="4".</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>Définit le type de numérotation :
+
+a: pour les lettres minuscules
+A :pour les lettres majuscules
+i :pour les chiffres romains minuscules
+I :pour les chiffres romains majuscules
+1 :pour les chiffres (par défaut)
+Le type spécifié est utilisé pour l'ensemble de la liste, sauf si un attribut différent type est utilisé sur un élément &lt;li&gt; fermé.</td>
+    </tr>
+    </table>
+    </li>
+    <li><code>&lt;output&gt;</code>:L'élément HTML  <code>&lt;output&gt;</code>   représente un conteneur dans lequel un site ou une application peut injecter le résultat d'un calcul ou d'une action utilisateur.
+    Comme tous les autres éléments HTML, cet élément inclut les attributs universels.
+    <table>
+        <tr>
+            <th>Attributs</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>for</td>
+            <td>Une liste d'identifiants d'autres éléments, séparés par des espaces, qui ont joué un rôle dans le calcul (en tant que valeurs d'entrée ou autrement).</td>
+        </tr>
+        <tr>
+            <td>form</td>
+            <td>L'élément de formulaire auquel l'élément est associé. La valeur de cet attribut doit être l'identifiant d'un élément 'form' du même document.</td>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td>Le nom de l'élément, qui peut être utilisé pour référencer l'élément dans des scripts ou des formulaires.</td>
+        </tr>    
+    </table>
+</li>
+<li><code>&lt;p&gt;</code>:L'élément HTML <code>&lt;p&gt;</code> représente un paragraphe de texte. Les paragraphes sont généralement représentés comme des blocs et séparés par un espace vertical, leur première ligne est également parfois indentée. Les paragraphes sont des éléments blocs.</li>
+
 </p>
+
 
 
 
