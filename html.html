@@ -304,7 +304,46 @@ Le type spécifié est utilisé pour l'ensemble de la liste, sauf si un attribut
     </table>
 </li>
 <li><code>&lt;p&gt;</code>:L'élément HTML <code>&lt;p&gt;</code> représente un paragraphe de texte. Les paragraphes sont généralement représentés comme des blocs et séparés par un espace vertical, leur première ligne est également parfois indentée. Les paragraphes sont des éléments blocs.</li>
+<li><code>&lt;picture&gt;</code>:L'élément HTML <code>&lt;picture&gt;</code> est un conteneur utilisé afin de définir zéro ou plusieurs éléments <code>&lt;source&gt;</code> destinés à un élément <code>&lt;img&gt;</code>. Le navigateur choisira la source la plus pertinente selon la disposition de la page (les contraintes qui s'appliquent à la boîte dans laquelle l'image devra être affichée), selon l'appareil utilisé (la densité de pixels de l'affichage par exemple avec les appareils hiDPI) et selon les formats pris en charge (ex. WebP pour les navigateurs Chromium ou PNG pour les autres). Si aucune correspondance n'est trouvée parmi les éléments <code>&lt;source&gt;</code>, c'est le fichier défini par l'attribut src de l'élément <code>&lt;img&gt;</code> qui sera utilisé.</li>
+<li><code>&lt;pre&gt;</code>:L'élément HTML <code>&lt;pre&gt;</code>  représente du texte préformaté, généralement écrit avec une police à chasse fixe. Le texte est affiché tel quel, les espaces utilisés dans le document HTML seront retranscrits.</li>
+<li><code>&lt;progress&gt;</code>:L'élément HTML <code>&lt;progress&gt;</code> indique l'état de complétion d'une tâche et est généralement représenté par une barre de progression.Comme tous les autres éléments HTML, cet élément inclut les attributs universels.
+<table>
+    <tr>
+        <th>Attributs</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>max</td>
+        <td>Cet attribut indique la valeur correspondant à la complétion de la tâche. Si l'attribut 'max' est présent, sa valeur doit être un nombre décimal supérieur à 0. La valeur par défaut est 1.</td>
+    </tr>
+    <tr>
+        <td>value</td>
+        <td>Cet attribut indique l'état actuel de complétion de la tâche avec une valeur numérique. La valeur de l'attribut doit être un nombre décimal compris entre 0 et 'max' (ou entre 0 et 1 si l'attribut 'max' est absent). Si l'attribut 'value' est absent, la barre de progression traduit un état indéterminé (la tâche est en cours et on ne sait pas la durée qu'elle prendra).</td>
+    </tr>
+</table>
+</li>
+<li><code>&lt;q&gt;</code>:L'élément HTML <code>&lt;q&gt;</code> indique que le texte qu'il contient est une citation en incise. La plupart des navigateurs modernes entoure le texte de cet élément avec des marques de citation. Cet élément est destiné aux citations courtes qui ne nécessitent pas de sauts de paragraphe. Pour les plus grandes citations, on utilisera l'élément <code>&lt;blockquote&gt;</code>.Comme tous les autres éléments HTML, cet élément inclut les attributs universels.Mais reçoit le plus.
+<table>
+    <tr>
+        <th>Attribut</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>cite</td>
+        <td>La valeur de cet attribut est une URL désignant la source du message ou de l'information citée. Cet attribut est prévu pour fournir des renseignements concernant le contexte ou la référence de cette citation.</td>
+    </tr>
+</table>
+</li>
+<li><code>&lt;ruby&gt;</code>:L'élément HTML <code>&lt;ruby&gt;</code> représente une annotation ruby. Les annotations 'Ruby' servent à afficher la prononciation des caractères d'Asie orientale.</li>
+<li><code>&lt;s&gt;</code>:L'élément HTML <code>&lt;s&gt;</code> permet d'afficher du texte qui est barré car il n'est plus pertinent ou car il est obsolète. <code>&lt;s&gt;</code> ne doit pas être employé pour indiquer des éditions dans un document (on utilisera alors <code>&lt;del&gt;</code> et <code>&lt;ins&gt;</code>).</li>
+<li><code>&lt;samp&gt;</code>:L'élément HTML <code>&lt;samp&gt;</code> est un élément qui permet de représenter un résultat produit par un programme informatique en incise dans du texte. Il est généralement affiché avec la police à chasse fixe du navigateur (par exemple en Courier ou en Lucida Console).</li>
+<li><code>&lt;script&gt;</code>:L'élément HTML <code>&lt;script&gt;</code> est utilisé pour intégrer ou faire référence à un script exécutable. Cela fait généralement référence à du code JavaScript mais ce peut également être un autre type de script.Les scripts sans attribut 'async' ou 'defer' sont chargés et exécutés immédiatement avant que le navigateur continue l'analyse de la page.
+<table>
 
+</table>
+</li>
+<li><code>&lt;section&gt;</code>:L'élément HTML  <code>&lt;section&gt;</code>  représente une section générique d'un document, par exemple un groupe de contenu thématique. Une section commence généralement avec un titre.</li>
+<li><code>&lt;select&gt;</code>:L'élément HTML <code>&lt;select&gt;</code> représente un contrôle qui fournit une liste d'options parmi lesquelles l'utilisateur pourra choisir.Comme tous les autres éléments HTML, celui-ci inclut les attributs universels.</li>
 </p>
 
 
