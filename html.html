@@ -339,7 +339,30 @@ Le type spécifié est utilisé pour l'ensemble de la liste, sauf si un attribut
 <li><code>&lt;samp&gt;</code>:L'élément HTML <code>&lt;samp&gt;</code> est un élément qui permet de représenter un résultat produit par un programme informatique en incise dans du texte. Il est généralement affiché avec la police à chasse fixe du navigateur (par exemple en Courier ou en Lucida Console).</li>
 <li><code>&lt;script&gt;</code>:L'élément HTML <code>&lt;script&gt;</code> est utilisé pour intégrer ou faire référence à un script exécutable. Cela fait généralement référence à du code JavaScript mais ce peut également être un autre type de script.Les scripts sans attribut 'async' ou 'defer' sont chargés et exécutés immédiatement avant que le navigateur continue l'analyse de la page.
 <table>
-
+    <tr>
+        <th>Attributs</th>
+        <th>Descriptions</th>
+    </tr>
+    <tr>
+        <td>async</td>
+        <td>Cet attribut booléen indique si le navigateur doit, dans la mesure du possible, exécuter les scripts de manière asynchrone. Cet attribut ne doit pas être utilisé si l'attribut src est absent (c'est-à-dire pour les scripts « inline » déclarés dans les éléments), dans ce cas il n'aurait aucun effet.Par défaut les navigateurs prennent (async="false") lors de l'analyse du document HTML .</td>
+    </tr>
+    <tr>
+        <td>crossorigin</td>
+        <td>Les balises de script classiques enverront un minimum d'informations à window.onerror pour les scripts qui ne respectent pas les contrôles standard du CORS. Afin de disposer de plus de renseignements sur les erreurs pour les sites utilisant des domaines séparés pour des documents statiques, on pourra utiliser cet attribut.</td>
+    </tr>
+    <tr>
+        <td>defer</td>
+        <td>Cet attribut booléen permet d'indiquer au navigateur que le script doit être exécuté après l'analyse du document.Il faut aussi savoir que cet attribut ne doit pas être sans l'attribut "src" ,dans ce cas il n'aurait aucun effet </td>
+    </tr>
+    <tr>
+        <td>integrity</td>
+        <td>Cet attribut contient des métadonnées que l'agent utilisateur peut vérifier afin de contrôler qu'une ressource téléchargée n'a pas été modifiée de façon frauduleuse.</td>
+    </tr>
+    <tr>
+        <td>nomodule</td>
+        <td>Cet attribut booléen indique que le script ne doit pas être exécuté dans le navigateur si celui prend en charge les modules ES6</td>
+    </tr>
 </table>
 </li>
 <li><code>&lt;section&gt;</code>:L'élément HTML  <code>&lt;section&gt;</code>  représente une section générique d'un document, par exemple un groupe de contenu thématique. Une section commence généralement avec un titre.</li>
