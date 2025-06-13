@@ -363,10 +363,96 @@ Le type spécifié est utilisé pour l'ensemble de la liste, sauf si un attribut
         <td>nomodule</td>
         <td>Cet attribut booléen indique que le script ne doit pas être exécuté dans le navigateur si celui prend en charge les modules ES6</td>
     </tr>
+    <tr>
+        <td>nonce</td>
+        <td>Un nonce cryptographique utilisé pour inscrire les scripts en ligne sur une liste blanche pour la règle script-src de la CSP (Content Security Policy)</td>
+    </tr>
+    <tr>
+        <td>referrerpolicy</td>
+        <td>Une chaîne de caractères qui indique le référent (referrer) à utiliser lors de la récupération du script.Mais il existe plusieurs referrer qui sont :
+        <ul>
+            <li><code>no-referrer</code>: Aucun référent n'est envoyé.</li>
+            <li><code>no-referrer-when-downgrade</code>: Le référent est envoyé pour les requêtes HTTPS vers des ressources HTTP, mais pas l'inverse.</li>
+            <li><code>origin</code>: Seul l'origine du document est envoyée comme référent.</li>
+            <li><code>origin-when-cross-origin</code>: L'origine est envoyée pour les requêtes cross-origin, mais le référent complet est envoyé pour les requêtes intra-origine.</li>
+            <li><code>same-origin</code>: Le référent complet est envoyé uniquement pour les requêtes intra-origine.</li>
+            <li><code>strict-origin</code>: Seule l'origine est envoyée comme référent, même pour les requêtes intra-origine.</li>
+            <li><code>strict-origin-when-cross-origin</code>: L'origine est envoyée pour les requêtes cross-origin, mais le référent complet est envoyé pour les requêtes intra-origine.</li>
+            <li><code>unsafe-url</code>: Le référent complet est toujours envoyé, quelle que soit la sécurité de la connexion.</li>
+        </td>
+    </tr>
+    <tr>
+        <td>src</td>
+        <td>Cet attribut définit l'URL d'un script externe ;il peut être utilisé pour insérer des scripts autrement que de l'insérer dans le même document.IL faut aussi savoir que les éléments scripts  avec cette attribut ne doivent pas contenir du script dans leurs balises  cela crée des comportements bizzare du fichier à chargé .</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>Cet attribut indique les types de "script",il possede différente valeur appartenant à ces catégories:
+        <ul>
+            <li><code>text/javascript</code>: Le type de script le plus courant, utilisé pour JavaScript.</li>
+            <li><code>module</code>: Indique que le script est un module JavaScript ES6.</li>
+            <li><code>application/json</code>: Utilisé pour les scripts JSON.</li>
+            <li><code>application/ld+json</code>: Utilisé pour les données structurées en JSON-LD.</li>
+            <li><code>text/ecmascript</code>: Un autre type pour JavaScript, moins courant.</li>
+        </td>
+    </tr>
 </table>
 </li>
 <li><code>&lt;section&gt;</code>:L'élément HTML  <code>&lt;section&gt;</code>  représente une section générique d'un document, par exemple un groupe de contenu thématique. Une section commence généralement avec un titre.</li>
-<li><code>&lt;select&gt;</code>:L'élément HTML <code>&lt;select&gt;</code> représente un contrôle qui fournit une liste d'options parmi lesquelles l'utilisateur pourra choisir.Comme tous les autres éléments HTML, celui-ci inclut les attributs universels.</li>
+<li><code>&lt;select&gt;</code>:L'élément HTML <code>&lt;select&gt;</code> représente un contrôle qui fournit une liste d'options parmi lesquelles l'utilisateur pourra choisir.Comme tous les autres éléments HTML, celui-ci inclut les attributs universels.Il possede aussi des attributs spécifiques :
+    <table>
+        <tr>
+            <th>Attributs</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>autocomplete</td>
+            <td>Cet attribut génere une chaîne de caractères fournissant une indication à l'agent utilisateur pour une fonctionnalités d'autocomplétion.</td>
+        </tr>
+        <tr>
+            <td>autofocus</td>
+            <td>Cet attribut booléen indique que le contrôle doit recevoir le focus automatiquement lorsque la page est chargée.</td>
+        </tr>
+        <tr>
+            <td>disabled</td>
+            <td>Cet attribut booléen indique que le contrôle est désactivé et ne peut pas être utilisé.</td>
+        </tr>
+        <tr>
+            <td>form</td>
+            <td>Cet attribut contient l'attribut 'id' de l'élément <code>&lt;form&gt;</code> auquel celui-ci est rattaché. Par défaut, il est à l'élément <code>&lt;form&gt;</code> qui est son plus proche ancêtre.</td>
+        </tr> 
+        <tr>
+            <td>multiple</td>
+            <td>Cet attribut booléen indique que l'utilisateur peut sélectionner plusieurs options dans la liste.</td>
+        </tr>   
+        <tr>
+            <td>name</td>
+            <td>Le nom du contrôle, qui peut être utilisé pour référencer le contrôle dans des scripts ou des formulaires.</td>
+        </tr>
+        <tr>
+            <td>required</td>
+            <td>Cet attribut booléen indique que le contrôle doit être rempli avant que le formulaire puisse être soumis.</td>
+        </tr>
+        <tr>
+            <td>size</td>
+            <td>Un entier indiquant le nombre d'options visibles dans la liste déroulante. Si cet attribut est absent, la liste déroulante n'affiche qu'une seule option à la fois.</td>
+        </tr>
+    </table>
+</li>
+<li><code>&lt;small&gt;</code>:L'élément HTML <code>&lt;small&gt;</code> permet de représenter des commentaires ou des textes à écrire en petits caractères .Il reçoit les attributs universels</li>
+<li><code>&lt;span&gt;</code>:L'élément HTML <code>&lt;span&gt;</code> est conteneur générique en ligne pour les contenus phrasés .Il peut être utilisé pour grouper des éléments afin de les mettre en forme (grâce aux attributs "class" ou "id" et aux règles CSS) ou parce qu'ils partagent certaines valeurs d'attribut comme "lang".Il doit être utilisé que quand  aucun autre élément sémantique  n'est approprié. L'élément <code>&lt;span&gt;</code> est très proche de l'élément <code>&lt;div&gt;</code>,mais l'élément <code>&lt;div&gt;</code> est un élément de bloc, alors que <code>&lt;span&gt;</code> est un élément en ligne.Il reçoit les attributs universels.</li>
+<li><code>&lt;strong&gt;</code>:L'élément HTML <code>&lt;strong&gt;</code>indique que le texte a une importance particulière ou un certain sérieux voire un caractère urgent. Cela se traduit généralement par un affichage en gras.Il reçoit aussi les attributs universels </li>
+<li><code>&lt;sub&gt;</code>:L'élément HTML <code>&lt;sub&gt;</code> est utilisé, pour des raisons typographiques, afin d'afficher du texte en indice (sous la ligne de base et généralement plus petit) par rapport au bloc de texte environnant.Comme les autres éléments HTML il reçoit les attibuts universels .</li>
+<li><code>&lt;sup&gt;</code>: L'élément HTML <code>&lt;sup&gt;</code> permet d'afficher du texte en exposant .il reçoit aussi les attributs universels .</li>
+<li><code>&lt;svg&gt;</code>:L'élélment HTML  <code>&lt;svg&gt;</code> est utilisé pour intégrer des documents SVG ;par exemple des documents HTML. </li>
+<li><code>&lt;table&gt;</code>:L'élélment HTML <code>&lt;table&gt;</code> permet de représenter des tableaux de données dans une page web ;c'est-à-dire des éléments dans un tableau en   deux dimensions </li>
+<li><code>&lt;template&gt;</code>:L'élément <code>&lt;template&gt;</code> est un élément plus mécanique utilisé pour stocker du contenu HTML du côté client qui ne s'affiche quand la page se charge mais qui peut être instancié et affiché par la suite grâce à un script JavaScript.Il reçoit aussi les attributs universels .</li>
+<li><code>&lt;textarea&gt;</code>:L'élément <code>&lt;textarea&gt;</code> représente un contrôle qui permet d'éditer du texte sur plusieurs lignes.L'élément <code>&lt;textarea&gt;</code> gère plusieurs attributs utilisés par les éléments  <code>&lt;input&gt;</code> : autocomplete, autofocus, disabled, placeholder, readonly et required.</li>
+<li><code>&lt;time&gt;</code>:L'élément <code>&lt;time&gt;</code> est utilisé pour entrer une période donnée ; et il permet aussi d'utiliser l'attribut "datetime" afin de traduire la date,il représente aussi les dates selon les fuseaux horaires .</li>
+<li><code>&lt;ul&gt;</code>:L'élément <code>&lt;ul&gt;</code> représente une liste d'éléments sans ordre particulier. Il est souvent représenté par une liste à puces.Il ne reçoit pas d'attributs universels.</li>
+<li><code>&lt;var&gt;</code>:L'élément <code>&lt;var&gt;</code>représente une variable dans une expression mathématique ou un texte lié à la programmation. Son contenu est généralement représenté avec une version italique de la police.Il acceptes les attributs universels . </li>
+<li><code>&lt;video&gt;</code>:L'élément <code>&lt;video&gt;</code> sert à intrégrer une vidéo à notre contenu HTML.Il reçoit l'attribut "autoplay" qui lance la vidéo dés qu'elle peut être joué sans être arrêtée de manière automatique; mais il accepte aussi les attributs universels .</li>
+<li><code>&lt;wbr&gt;</code>:L'élément <code>&lt;wbr&gt;</code> permet de représenter un emplacement où casser la ligne si nécessaire. Le navigateur pourra alors utiliser cet emplacement pour effectuer un saut de ligne si le texte est trop long et qu'en temps normal, une règle empêche le saut de ligne.Il accepte aussi les attributs universels .</li>
 </p>
 
 
