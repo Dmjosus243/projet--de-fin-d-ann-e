@@ -32,7 +32,7 @@ Les catégories de contenu spécifiques qui décrivent des catégories plus rare
 <th class="meta">Contenu méta-données</th>
 <th>Les éléments appartenant à cette catégorie modifient la présentation ou le comportement du reste du document, insèrent des liens vers d'autres documents ou comportent des informations sur la structure même des données.</th>
 
-<h4 class="flux">Contenu de flux </h4>
+<h3 class="flux">Contenu de flux </h3>
 <p>Les éléments appartenant à la catégorie de contenu de flux contiennent généralement du texte ou du contenu intégré.Ces éléments sont : 
    <li> a :l'élément d'ancre (pour ancre ou anchor en anglais ), avec son att son attribut href,crée un lien hypertexte vers des pages web,des fichiers ,des addresses e-mail,des emplacementsse trouvant dans la meme page , ou tout ce qu'une URL peut adresser.
 Le contenude chaque élément cette balise doit indiquer la destination du lien.Si l'attribut href est présent,appuyer sur la touche entrée en se concentrant sur l'élément la balise "a" l'activera. </tr>
@@ -470,7 +470,7 @@ Le type spécifié est utilisé pour l'ensemble de la liste, sauf si un attribut
         <li><code>&lt;hgroup&gt;</code>:L'élément HTML <code>&lt;hgroup&gt;</code> représente un titre et son contenu associé. Il regroupe un élément <code>&lt;h1&gt;</code>- <code>&lt;h6&gt;</code>  avec un ou plusieurs paragraphes <code>&lt;p&gt;</code>.</li>
     </ul>
 
-<h4>Contenu phrasé</h4>
+<h3>Contenu phrasé</h3>
     <p>Le contenu phrasé est un ensemble d'éléments HTML qui permettent de structurer le texte et les éléments en ligne d'un document. Ces éléments sont utilisés pour formater le texte, ajouter des liens, des images, des citations, etc.</p>
     <p>Voici les éléments de contenu phrasé les plus courants :</p>
     <ul>
@@ -486,7 +486,7 @@ Le type spécifié est utilisé pour l'ensemble de la liste, sauf si un attribut
         <li><code>&lt;dfn&gt;</code>:L'élément HTML <code>&lt;dfn&gt;</code> est utilisé pour définir un terme ou un concept dans le texte.</li>
     </ul>
 
-<h4>Contenu intégré</h4>
+<h3>Contenu intégré</h3>
     <p>Le contenu intégré est un ensemble d'éléments HTML qui permettent d'intégrer des ressources externes dans une page web. Ces éléments sont utilisés pour afficher des images, des vidéos, des fichiers audio, des documents, etc.</p>
     <p>Voici les éléments de contenu intégré les plus courants :</p>
     <ul>
@@ -532,7 +532,35 @@ Le type spécifié est utilisé pour l'ensemble de la liste, sauf si un attribut
         </table>
         Mais il faut aussi savoir que cet élélment reçoit les attributs universels .</li>
         <li><code>&lt;iframe&gt;</code>:On utilise cet élélment pour représenter une navigation imbriqué qui permet d'obtenir un page html courante dans la page courante .Cet élément prends en charge les attributs univrsels .</li>
-        <li><code>&lt;img&gt;</code>:On utilise cet élément pour intégrer des images dans le document </li>
+        <li><code>&lt;img&gt;</code>:On utilise cet élément pour intégrer des images dans le document ;l'élémént <code>&lt;img&gt;</code> possède des atributs spécifique pour son utilisation qui sont :
+        <table>
+            <tr>
+                <th>Attributs</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>src</td>
+                <td>Spécifie l'URL de l'image à afficher. Il s'agit de l'adresse de la ressource image.Sa présence est obligatoire.</td>
+            </tr>
+            <tr>
+                <td>alt</td>
+                <td>Fournit une description textuelle de l'image. Cette description est utilisée par les lecteurs d'écran pour les personnes malvoyantes et s'affiche si l'image ne peut pas être chargée.</td>
+            </tr>
+
+        </table>
+        Mais il faut aussi savoir que cet élélment reçoit les attributs universels .</li>
+        <li><code>&lt;object&gt;</code>:L'élément HTML <code>&lt;object&gt;</code> représente une ressource externe qui peut être interprétée comme une image, un contexte de navigation imbriqué ou une ressource à traiter comme un plugin. Il reçoit aussi les attributs universels . </li>
+        <li><code>&lt;video&gt;</code>:L'élément HTML <code>&lt;video&gt;</code> sert à intégrer une vidéo dans le document. Il reçoit l'attribut "autoplay" qui lance la vidéo dés qu'elle peut être joué sans être arrêtée de manière automatique; mais il accepte aussi les attributs universels .</li>
+    </ul>
+<h3>Contenu interactif</h3>
+    <p>Le contenu interactif est un ensemble d'éléments HTML qui permettent d'ajouter des fonctionnalités interactives à une page web. Ces éléments sont utilisés pour créer des formulaires, des contrôles de saisie, des boutons, des menus déroulants, etc.</p>
+    <p>Voici les éléments de contenu interactif les plus courants :</p>
+    <ul>
+        <li><code>&lt;a&gt;</code>:L'élément HTML <code>&lt;a&gt;</code>  avec son attribut son attribut "href" qui lui permet de créer un lien vers des pages web ;il reçoit comme tout autre élément les attributs universels.</li>
+        <li><code>&lt;button&gt;</code>:L'élément HTML <code>&lt;button&gt;</code> est un élément interactif qui peut être activé avec la souris,clavier,touche ou avec une commande vocale  à l'aide d'un assistant technologique ; il reçoit aussi les attributs universels .</li>
+        
+    </ul>
+        
 
 
 
