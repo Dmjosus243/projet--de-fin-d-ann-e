@@ -454,6 +454,87 @@ Le type spécifié est utilisé pour l'ensemble de la liste, sauf si un attribut
 <li><code>&lt;video&gt;</code>:L'élément <code>&lt;video&gt;</code> sert à intrégrer une vidéo à notre contenu HTML.Il reçoit l'attribut "autoplay" qui lance la vidéo dés qu'elle peut être joué sans être arrêtée de manière automatique; mais il accepte aussi les attributs universels .</li>
 <li><code>&lt;wbr&gt;</code>:L'élément <code>&lt;wbr&gt;</code> permet de représenter un emplacement où casser la ligne si nécessaire. Le navigateur pourra alors utiliser cet emplacement pour effectuer un saut de ligne si le texte est trop long et qu'en temps normal, une règle empêche le saut de ligne.Il accepte aussi les attributs universels .</li>
 </p>
+<h4>Contenu sectionnant</h4>
+    <p>Le contenu sectionnant est un ensemble d'éléments HTML qui permettent de structurer le contenu d'une page web en sections logiques. Ces éléments sont utilisés pour organiser le contenu de manière hiérarchique et sémantique, facilitant ainsi la compréhension et la navigation dans le document.</p>
+    <p>Voici les éléments de contenu sectionnant les plus courants :</p>
+    <ul>
+        <li><code>&lt;article&gt;</code>:L'élément <code>&lt;article&gt;</code> représente une composition d'article qui est indépendante dans un document destinée à être réutilisée de manière indépendante.Il reçoit les attributs universels commun à tout les éléments .</li>
+        <li><code>&lt;aside&gt;</code>:L'élément <code>&lt;aside&gt;</code> représente une partie d'un document dont le contenu n'a qu'un rapport indirect avec le contenu principal du document.Cet élément ne reçoit que les atttributs universels .</li>
+        <li><code>&lt;nav&gt;</code>:L'élément HTML <code>&lt;nav&gt;</code>  représente une section d'une page ayant des liens vers d'autres pages ou des fragments de cette page.Il ne possède que les attributs universels </li>
+        <li><code>&lt;section&gt;</code>:L'élément HTML <code>&lt;section&gt;</code> représente une section générique d'un document, par exemple un groupe de contenu thématique. Une section commence généralement avec un titre.Il ne reçoit que les attributs universels.</li>
+    </ul>
+<h4>Contenu de titre </h4>
+    <p>Le contenu de titre est un ensemble d'éléments HTML qui permettent de structurer les titres et sous-titres d'un document. Ces éléments sont utilisés pour organiser le contenu de manière hiérarchique, facilitant ainsi la navigation et la compréhension du document.</p>
+    <p>Voici les éléments de contenu de titre les plus courants :</p>
+    <ul>
+        <li><code>&lt;hgroup&gt;</code>:L'élément HTML <code>&lt;hgroup&gt;</code> représente un titre et son contenu associé. Il regroupe un élément <code>&lt;h1&gt;</code>- <code>&lt;h6&gt;</code>  avec un ou plusieurs paragraphes <code>&lt;p&gt;</code>.</li>
+    </ul>
+
+<h4>Contenu phrasé</h4>
+    <p>Le contenu phrasé est un ensemble d'éléments HTML qui permettent de structurer le texte et les éléments en ligne d'un document. Ces éléments sont utilisés pour formater le texte, ajouter des liens, des images, des citations, etc.</p>
+    <p>Voici les éléments de contenu phrasé les plus courants :</p>
+    <ul>
+        <li><code>&lt;a&gt;</code>:L'élément HTML <code>&lt;a&gt;</code> représente un lien hypertexte, qui permet de naviguer vers une autre page ou une autre ressource.</li>
+        <li><code>&lt;abbr&gt;</code>:L'élément HTML <code>&lt;abbr&gt;</code> représente un acronyme ou une abréviation. Il peut inclure un attribut "title" pour fournir le développement complet de l'acronyme.</li>
+        <li><code>&lt;audio&gt;</code>:L'élément HTML <code>&lt;audio&gt;</code> est utilisé pour intégrer du contenu audio dans une page web.</li>
+        <li><code>&lt;b&gt;</code>:L'élément HTML <code>&lt;b&gt;</code> est utilisé pour mettre en évidence du texte sans indiquer d'importance particulière.</li>
+        <li><code>&lt;blockquote&gt;</code>:L'élément HTML <code>&lt;blockquote&gt;</code> représente une citation longue, généralement d'un autre auteur ou d'une source externe.</li>
+        <li><code>&lt;br&gt;</code>:L'élément HTML <code>&lt;br&gt;</code> est utilisé pour insérer un saut de ligne dans le texte.</li>
+        <li><code>&lt;canvas&gt;</code>:L'élément HTML <code>&lt;canvas&gt;</code> est utilisé pour dessiner des graphiques et des animations à l'aide de JavaScript.</li>
+        <li><code>&lt;cite&gt;</code>:L'élément HTML <code>&lt;cite&gt;</code> est utilisé pour citer le titre d'une œuvre, comme un livre, un film, une chanson, etc.</li>
+        <li><code>&lt;del&gt;</code>:L'élément HTML <code>&lt;del&gt;</code> est utilisé pour représenter du texte supprimé ou modifié dans un document.</li>
+        <li><code>&lt;dfn&gt;</code>:L'élément HTML <code>&lt;dfn&gt;</code> est utilisé pour définir un terme ou un concept dans le texte.</li>
+    </ul>
+
+<h4>Contenu intégré</h4>
+    <p>Le contenu intégré est un ensemble d'éléments HTML qui permettent d'intégrer des ressources externes dans une page web. Ces éléments sont utilisés pour afficher des images, des vidéos, des fichiers audio, des documents, etc.</p>
+    <p>Voici les éléments de contenu intégré les plus courants :</p>
+    <ul>
+        <li><code>&lt;audio&gt;</code>:L'élément HTML <code>&lt;audio&gt;</code> sert à intégrer un fichier audio externe dans le document , elle peut recevoir plusieurs types de contenus audio grâce "src", il reçoit le plus souvent aussi l'auttribut "autoplay";si cet attribut est spécifié ,l'audio commencera automatiquement la lecture de la source audio sans attendre le chargement total du fichier .Il inclut aussi les attributs universels.</li>
+        <li><code>&lt;canvas&gt;</code>:On utilise l'élément <code>&lt;canvas&gt;</code> pour dessiner des graphiques ou des animations .Comme tous les autres éléments il accepte les attributs universels ,mais il voici quelques attributs qui sont utilisés le plus souvent :
+        <table>
+            <tr>
+                <th>Attributs</th>
+                </th>Descriptions</th>
+            </tr>
+            <tr>
+                <td>height</td>
+                <td>La hauteur du canevas, exprimée en pixels CSS. Si cet attribut est absent, la valeur par défaut est de 150 pixels.</td>
+            </tr>
+            <tr>
+                <td>width</td>
+                <td>La largeur du canevas, exprimée en pixels CSS. Si cet attribut est absent, la valeur par défaut est de 300 pixels.</td>
+            </tr>
+        </table>
+        </li>
+        <li><code>&lt;embed&gt;</code>:On utilise l'élément <code>&lt;embed&gt;</code> pour intégrer du contenu externe dans le document ,cela peut provenir d'une application externe comme un plugin du navigateur.Voici ci-dessous des attributs qui sont souvent utilisés avec cet élément:
+        <table>
+            <tr>
+                <th>Attributs</th>
+                <th>Descriptions</th>
+            </tr>
+            <tr>
+                <td>height</td>
+                <td>La hauteur de l'élément intégré, exprimée en pixels CSS.</td>
+            </tr>
+            <tr>
+                <td>src</td>
+                <td>L'URL de la ressource externe à intégrer. Il s'agit de l'adresse du contenu que l'on souhaite afficher dans l'élément.</td>
+            </tr>
+            <tr>
+                <td>type</td>
+                <td>Le type MIME de la ressource intégrée. Il permet au navigateur de savoir comment traiter le contenu intégré.</td>
+            </tr>
+            <tr>
+                <td>width</td>
+                <td>La largeur de l'élément intégré, exprimée en pixels CSS.</td>
+            </tr>
+        </table>
+        Mais il faut aussi savoir que cet élélment reçoit les attributs universels .</li>
+        <li><code>&lt;iframe&gt;</code>:On utilise cet élélment pour représenter une navigation imbriqué qui permet d'obtenir un page html courante dans la page courante .Cet élément prends en charge les attributs univrsels .</li>
+        <li><code>&lt;img&gt;</code>:On utilise cet élément pour intégrer des images dans le document </li>
+
+
 
 
 
