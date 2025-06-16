@@ -558,9 +558,47 @@ Le type spécifié est utilisé pour l'ensemble de la liste, sauf si un attribut
     <ul>
         <li><code>&lt;a&gt;</code>:L'élément HTML <code>&lt;a&gt;</code>  avec son attribut son attribut "href" qui lui permet de créer un lien vers des pages web ;il reçoit comme tout autre élément les attributs universels.</li>
         <li><code>&lt;button&gt;</code>:L'élément HTML <code>&lt;button&gt;</code> est un élément interactif qui peut être activé avec la souris,clavier,touche ou avec une commande vocale  à l'aide d'un assistant technologique ; il reçoit aussi les attributs universels .</li>
-        
+        <li><code>&lt;details&gt;</code> :L'élément HTML <code>&lt;details&gt;</code> est utilisé comme un outils pour afficher des informations pour un élément du document ;il est souvent avec l'attribut "open" qui est un booléen qui sert à dire que si les éléments de l'élément <code>&lt;details&gt;</code> est visible ou pas;par defaut cet attribut n'est pas présent c'est qui veut dire que le contenu ne s'afiche pas .Mais il est à savoir qu'il reçoit aussi les attributs universels .</li>
+        <li><code>&lt;label&gt;</code>:L'élément HTML <code>&lt;label&gt;</code> représente une légende pour un objet d'une interface utilisateur.Cet élément inclut les attributs universels .</li>
     </ul>
-        
+
+<h3>Contenu tangible</h3>
+<p>Un contenu peut être dit tangible lorsqu'il n'est ni vide ni caché. </p>
+<p>Les éléments dont le modèle de contenu est de flux ou phrasé devraient toujours avoir au moins un noeud dont le contenu est tangible.</p>
+
+<h3>Contenu de formulaire</h3>
+    <p>Le contenu de formulaire est un ensemble d'éléments HTML qui permettent de créer des formulaires interactifs pour la saisie de données par les utilisateurs. Ces éléments sont utilisés pour collecter des informations, soumettre des données, etc.</p>
+    <p>Voici les éléments qui sont de ce contenu :</p>
+    <ul>
+        <li><code>&lt;button&gt;</code></li>
+        <li><code>&lt;fieldset&gt;</code></li>
+        <li><code>&lt;input&gt;</code></li>
+        <li><code>&lt;label&gt;</code></li>
+        <li><code>&lt;meter&gt;</code></li>
+        <li><code>&lt;object&gt;</code></li>
+        <li><code>&lt;output&gt;</code></li>
+        <li><code>&lt;progress&gt;</code></li>
+        <li><code>&lt;select&gt;</code></li>
+        <li><code>&lt;textarea&gt;</code></li>
+    </ul>
+    <p>Cette catégorie est divisée en plussieurs sous-catégorie qui sont les suivantes :</p>
+
+    <ul>
+        <li> éléments listés</li>
+        <p>Les éléments sont les suivantsn: <code>&lt;button&gt;</code>,<code>&lt;fieldset&gt;</code>,<code>&lt;input&gt;</code>,<code>&lt;objects&gt;</code>,<code>&lt;output&gt;</code>,<code>&lt;select&gt;</code> et <code>&lt;textarea&gt;</code></p>
+    </ul>
+    <ul>
+        <li>éléments étiquetables</li>
+        <p>Ce sont des éléments qui peuvent  mis avec l'élément <code>&lt;label&gt;</code>,ce sont les suivants : <code>&lt;button&gt;</code>,<code>&lt;input&gt;</code>,<code>&lt; meter&gt;</code>,<code>&lt;output&gt;</code>,<code>&lt;progress&gt;</code>,<code>&lt;select&gt;</code> et <code>&lt;textarea&gt;</code></p>
+    </ul> 
+    <ul>
+        <li>éléments participants à l'envoi de formulaire</li>
+        <p>Ce sont des éléments  pouvant être utilisés pour la construction  des données d'un formulaire quand celui-ci est envoyé . Ce sont : <code>&lt;button&gt;</code>,<code>&lt;input&gt;</code>,<code>&lt;object&gt;</code>,<code>&lt;select&gt;</code> et <code>&lt;textarea&gt;</code>.</p>
+    </ul>   
+    <ul>
+        <li>élément de ré-initialisation</li>
+        <p>Ce sont des éléments qui permettent la ré-initialisation d'un formulaire.Ce sont : <code>&lt;input&gt;</code>, <code>&lt;output&gt;</code>,<code>&lt;select&gt;</code> et <code>&lt;textarea&gt;</code></p>
+    </ul>
 
 
 
