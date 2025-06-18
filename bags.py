@@ -1,1 +1,0 @@
-def_recherche = "recherche"
