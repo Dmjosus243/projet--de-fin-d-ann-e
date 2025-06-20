@@ -2,3 +2,51 @@ head{
     background-color: aquamarine;
     text-align: center !important;
 }
+header.main-header{
+    background-color: azure;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    text-align: justify;
+    border-radius: 20px;
+    padding:1.5em;
+    margin: 0.5em;
+}
+section{
+    background-color: lightcyan;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    text-align: justify;
+    border-radius: 20px;
+    padding: 1.5em;
+    margin: 0.5em;
+}
+h2.Bags{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    color: darkblue;
+}
+a{
+    color: darkblue;
+    text-decoration: none;
+}
+a.hover{
+    color: darkred;
+    text-decoration: underline;
+}
+footer{
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    text-align: center;
+    color : red;
+    padding:10px,10px;
+    margin:15px,15px;
+    border-radius: 25px;
+}
+strong.society{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: darkblue;
+    text-decoration: underline;}
