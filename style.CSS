@@ -1,3 +1,26 @@
+.main-nav{
+    background-color: rgb(49, 140, 170);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    text-align: left;
+    border-radius: 20px;
+    padding: 1em;
+    margin: 0.5em;
+    float: left;
+    box-shadow: 2px;;
+}
+.nav-langages{
+    background-color: rgb(49, 140, 170);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    text-align: left;
+    border-radius: 20px;
+    padding: 1em;
+    margin: 0.5em;
+    float: right;
+    box-shadow: 2px;}
+
+
 head{
     background-color: aquamarine;
     text-align: center !important;
@@ -27,11 +50,11 @@ h2.Bags{
     color: darkblue;
 }
 a{
-    color: darkblue;
-    text-decoration: none;
+    color: white;
+    font-size: larger;
 }
 a.hover{
-    color: darkred;
+    color: black;
     text-decoration: underline;
 }
 footer{
@@ -49,4 +72,4 @@ strong.society{
     font-size: 1.5em;
     text-align: center;
     color: darkblue;
-    text-decoration: underline;}
+}
