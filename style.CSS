@@ -73,3 +73,25 @@ strong.society{
     text-align: center;
     color: darkblue;
 }
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    text-align: justify;
+    color: black;
+    margin: 0.5em;
+    padding: 0.5em;}
+img{
+    box-shadow: 10% 10% 20px rgba(0, 0, 0, 0.5);
+    height:200px;
+    margin: 2px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 1em;
+    transition: transform 0.2s;
+    border-radius: 10px;
+}
+body{
+    background: url("./Langage\ Bags.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
