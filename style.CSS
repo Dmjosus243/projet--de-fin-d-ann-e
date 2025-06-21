@@ -1,15 +1,14 @@
-.main-nav{
+.homepages{
     background-color: rgb(49, 140, 170);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: medium;
-    text-align: left;
+    text-align: center;
     border-radius: 20px;
     padding: 1em;
     margin: 0.5em;
-    float: left;
-    box-shadow: 2px;;
-}
-.nav-langages{
+    box-shadow: 2px;
+    display: flex;}
+.nav-links{
     background-color: rgb(49, 140, 170);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: medium;
@@ -25,22 +24,12 @@ head{
     background-color: aquamarine;
     text-align: center !important;
 }
-header.main-header{
-    background-color: azure;
+.main-header{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
     text-align: justify;
     border-radius: 20px;
     padding:1.5em;
-    margin: 0.5em;
-}
-section{
-    background-color: lightcyan;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium;
-    text-align: justify;
-    border-radius: 20px;
-    padding: 1.5em;
     margin: 0.5em;
 }
 h2.Bags{
@@ -57,7 +46,7 @@ a.hover{
     color: black;
     text-decoration: underline;
 }
-footer{
+.text-footer{
     background-color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: small;
@@ -90,8 +79,12 @@ img{
     padding: 1em;
     transition: transform 0.2s;
     border-radius: 10px;
+    size: 250px;
+    width: 200px;
+    height: 150px;
 }
 body{
     background: url("./Langage\ Bags.jpg") no-repeat center center fixed;
     background-size: cover;
+
 }
