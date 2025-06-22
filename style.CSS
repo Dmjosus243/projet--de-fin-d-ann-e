@@ -88,3 +88,24 @@ body{
     background-size: cover;
 
 }
+.nav-footer{
+    background-color: rgb(61, 94, 105);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    text-align: center;
+    border-radius: 20px;
+    padding: 1em;
+    margin: 0.5em;
+    box-shadow: 2px;
+    display:flex;
+}
+footer{
+    background-color: rgb(61, 94, 105);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 1em;
+    margin: 0.5em;
+    box-shadow: 2px;
+    display: flex;
+}
